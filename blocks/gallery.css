@@ -1,0 +1,27 @@
+.gallery__photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 1190px;
+  gap: 16px;
+}
+
+.gallery__photo-img {
+  width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 544px) {
+  .gallery__photo-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    max-width: 288px;
+  }
+}
+
+@media screen and (min-width: 545px) and (max-width: 1024px) {
+  .gallery__photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    max-width: 720px;
+  }
+}
